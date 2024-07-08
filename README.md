@@ -1,0 +1,7 @@
+# STACK:
+  ## FRONTEND:
+  - TAILWINDCSS
+  - React
+    
+  ## BACKEND:
+  - DJANGO REACTAPI
