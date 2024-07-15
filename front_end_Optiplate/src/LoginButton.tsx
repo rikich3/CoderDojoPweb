@@ -9,7 +9,7 @@ const LoginButton = () => {
       bg-gray-700 text-yellow-600 rounded-3xl hover:text-yellow-200
       hover:bg-slate-900">
         <IoLogInOutline size="120" />
-      </div>;
+      </div>
     </a>);
 }
 export default LoginButton

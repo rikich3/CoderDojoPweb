@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
+
 import './App.css'
-import ColorPalette from './CustomColorPalette'
+
 import VerticalSkip from './VerticalSkip'
 import TitleAndBrand from './TitleAndBrand';
 import LoginButton from './LoginButton'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
+  
   return (
     <>
       <div className="flex flex-col items-center h-screen w-screen bg-[url('/codedojo_movil_bg.png')] bg-cover
