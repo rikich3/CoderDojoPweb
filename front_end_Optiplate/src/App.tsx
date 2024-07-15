@@ -6,6 +6,7 @@ import VerticalSkip from './VerticalSkip'
 import TitleAndBrand from './TitleAndBrand';
 import LoginButton from './LoginButton'
 
+
 function App() {
   
   
@@ -13,10 +14,10 @@ function App() {
     <>
       <div className="flex flex-col items-center h-screen w-screen bg-[url('/codedojo_movil_bg.png')] bg-cover
                       lg:bg-[url('/codedojo_desktop_bg.png')]">
-        <VerticalSkip skip={30} />  
+        <VerticalSkip skip={30} logo={true}/>  
         <TitleAndBrand />
         <VerticalSkip skip={35} />
-        <LoginButton />
+        <LoginButton/>
         <VerticalSkip skip={20} />
         
         <VerticalSkip skip={20} />
