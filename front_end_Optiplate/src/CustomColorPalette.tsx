@@ -12,7 +12,7 @@ const ColorPalette = () => {
 };
 
 
-const Icons = ({ icon })=> (
+const Icons = ({ icon }: { icon: React.ReactNode }) => (
   <div className='sidebar-icon'>
     {icon}
   </div>

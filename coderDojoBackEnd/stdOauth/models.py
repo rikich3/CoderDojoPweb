@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 from django.contrib.auth.base_user import BaseUserManager
 
 
@@ -26,8 +26,16 @@ class AppUserManager(BaseUserManager):
     user.save()
     return user
 
-class StdUser():
+class AppUser(AbstractBaseUser, PermissionsMixin):
+  user_id = models.AutoField(primary_key = True)
+  email = models.EmailField(max_length = 256, unique = True)
+  username = models.CharField(max_lenghth = 50)
+  country = models.CharField(max_length=100)
+  USERNAME_FIELD = 'email'
+  REQUIRED_FIELDS = ['username']
+  objects = App
   primaryEmail = models.TextField(max_length=254, blank=False)
+  
   
   class Meta:
     abstract = True

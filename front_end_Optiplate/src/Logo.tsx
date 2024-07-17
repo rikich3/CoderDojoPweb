@@ -1,4 +1,4 @@
-const Logo = (props) => {
+const Logo = (props: { logo: any }) => {
   if(props.logo){
     return (
       <a href="https://coderdojo.com/" target="_blank">
