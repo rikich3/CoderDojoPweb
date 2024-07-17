@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'posts',
+    'stdOauth'
 ]
 
 CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
@@ -89,6 +90,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'stdOauth.AppUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

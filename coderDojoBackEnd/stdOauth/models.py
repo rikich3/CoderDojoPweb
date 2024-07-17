@@ -29,21 +29,11 @@ class AppUserManager(BaseUserManager):
 class AppUser(AbstractBaseUser, PermissionsMixin):
   user_id = models.AutoField(primary_key = True)
   email = models.EmailField(max_length = 256, unique = True)
-  username = models.CharField(max_lenghth = 50)
+  username = models.CharField(max_length = 50)
   country = models.CharField(max_length=100)
   USERNAME_FIELD = 'email'
   REQUIRED_FIELDS = ['username']
-  objects = App
+  objects = AppUserManager()
   primaryEmail = models.TextField(max_length=254, blank=False)
-  
-  
-  class Meta:
-    abstract = True
-  
-  def save(self, *args, **kwargs):
-    if not self.password:
-      raise ValidationError("Password missing")
-    super().save(*args, **kwargs)
-    
-  def set_password(self, raw_password):
-    super().set_password(raw_password)    
+  def __str__(self):
+    return self.username
