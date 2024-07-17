@@ -9,11 +9,6 @@ function Fondo() {
       <div className="shooting-star shooting-star-4"></div>
       <div className="shooting-star shooting-star-5"></div>
     </div>
-    <div className="pyramids">
-      <div className="pyramid pyramid-giza"></div>
-      <div className="pyramid pyramid-Khafre"></div>
-      <div className="pyramid pyramid-menkaure"></div>
-    </div>
     <div className="sky">
       <div className="stars-small"></div>
       <div className="stars-medium"></div>

@@ -3,11 +3,6 @@ function FondoDia() {
     <div className="absolute inset-0">
       <div className="frame">
         <link rel="stylesheet" href="./fondo-dia.css" />
-        <div className="pyramids">
-          <div className="pyramid pyramid-giza"></div>
-          <div className="pyramid pyramid-Khafre"></div>
-          <div className="pyramid pyramid-menkaure"></div>
-        </div>
         <div className="sky">
           <div id="background-wrap">
             <div className="x1">
