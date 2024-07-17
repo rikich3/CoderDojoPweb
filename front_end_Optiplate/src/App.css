@@ -44,3 +44,29 @@
 .read-the-docs {
   color: #888;
 } */
+.toggle-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #1a202c; /* Dark background */
+  color: #fff; /* White text */
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #2d3748; /* Slightly lighter background on hover */
+}
+
+.toggle-button img {
+  margin-right: 8px; /* Space between icon and text */
+  width: 24px;
+  height: 24px;
+}
+
